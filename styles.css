@@ -1,0 +1,94 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient();
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+canvas {
+  position: absolute;
+  background-size: contain;
+  height: 110vh;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: black;
+}
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+header{
+  position: absolute;
+  top: 2vh;
+  text-align: center;
+  left: 10%;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+font-size: 20vh;
+letter-spacing: 3.4px;
+word-spacing: 4.2px;
+color: #2a9d8f;
+font-weight: 700;
+text-decoration: none;
+font-style: italic;
+font-variant: small-caps;
+text-transform: uppercase;
+}
+.piano {
+  position:absolute;
+  top: 10vh;
+  right: 0;
+  left: 8%;
+  bottom: 0;
+  display: flex;
+  border: 50px groove slategray;
+  border-radius: 50px;
+}
+
+.text{
+  position: absolute;
+  bottom: 0;
+}
+
+.key {
+  height: 40vh;
+font-style: bold;
+font-weight: 600;
+text-align: end;
+}
+
+.white {
+  background-color: rgb(255, 255, 255);
+  border: 3px solid #333;
+  border-top: 0px ;
+  border-bottom: 5px double #333;
+ 
+}
+
+.white.active {
+  background-color: rgb(151, 151, 151);
+}
+
+.black {
+  background-color: black;
+  z-index: 10;
+  margin-left: -55px;
+  margin-right: -55px;
+  height: 30vh;
+  border: 3px solid silver;
+  border-top: 0px ;
+  border-bottom: 5px double silver;
+  border-bottom-left-radius: 25%;
+  border-bottom-right-radius: 25%;
+}
+
+.black.active {
+  background-color: rgb(51, 51, 51);
+}
