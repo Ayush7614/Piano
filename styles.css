@@ -1,9 +1,7 @@
 *, *::before, *::after {
   box-sizing: border-box;
 }
-
 body {
-  background: linear-gradient();
   margin: 0;
   padding: 0;
   height: 100vh;
@@ -12,49 +10,61 @@ body {
   overflow-x: hidden;
 }
 canvas {
+  background-image: url(background.png);
+  background-color: #C89595;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   position: absolute;
-  background-size: contain;
   height: 110vh;
   left: 0;
   top: 0;
   bottom: 0;
   right: 0;
-  background-color: black;
 }
 .nopadding {
   padding: 0 !important;
   margin: 0 !important;
 }
-header{
-  position: absolute;
-  top: 2vh;
+
+.heading{
   text-align: center;
-  left: 10%;
-  font-family: "Comic Sans MS", cursive, sans-serif;
-font-size: 20vh;
-letter-spacing: 3.4px;
-word-spacing: 4.2px;
-color: #2a9d8f;
-font-weight: 700;
-text-decoration: none;
-font-style: italic;
-font-variant: small-caps;
-text-transform: uppercase;
+  font-size: 5.5rem;
+  width: 100%;
+  margin-top: 8.1rem;
+  margin-bottom: 0;
+  color: brown;
+  text-decoration: none;
+  text-shadow: 2px 2px 4px #FDF6F0;
+  font-style: italic;
+  font-family: serif;
+
+}
+.sub{
+  margin-top: 0;
+  text-align: center;
+  font-size: 1.5rem;
+  width: 100%;
+  margin-top: 0;
+  color: #FDF6F0;
+  font-style: italic;
+  font-family: serif;
 }
 .piano {
   position:absolute;
-  top: 10vh;
+  top: 9vh;
   right: 0;
   left: 8%;
   bottom: 0;
   display: flex;
-  border: 50px groove slategray;
-  border-radius: 50px;
+  border: 15px inset #2D2424;
 }
 
 .text{
   position: absolute;
   bottom: 0;
+  color: #D79771;
 }
 
 .key {
@@ -66,10 +76,10 @@ text-align: end;
 
 .white {
   background-color: rgb(255, 255, 255);
-  border: 3px solid #333;
+  border:5px solid #171010;
   border-top: 0px ;
-  border-bottom: 5px double #333;
- 
+  border-bottom: 5px #171010;
+
 }
 
 .white.active {
@@ -77,18 +87,17 @@ text-align: end;
 }
 
 .black {
-  background-color: black;
+  background-color: #2D2424;
   z-index: 10;
   margin-left: -55px;
   margin-right: -55px;
-  height: 30vh;
-  border: 3px solid silver;
+  height: 28vh;
+  border:  solid #171010;
   border-top: 0px ;
-  border-bottom: 5px double silver;
-  border-bottom-left-radius: 25%;
-  border-bottom-right-radius: 25%;
+  border-bottom: 2px double #171010;
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
 }
-
 .black.active {
   background-color: rgb(51, 51, 51);
 }
