@@ -17,7 +17,7 @@ canvas {
   background-attachment: fixed;
   background-size: cover;
   position: absolute;
-  height: 110vh;
+  height: 120vh;
   left: 0;
   top: 0;
   bottom: 0;
@@ -33,7 +33,7 @@ canvas {
   font-size: 5.5rem;
   width: 100%;
   margin-top: 8.1rem;
-  margin-bottom: 0;
+  margin-bottom: 1;
   color: brown;
   text-decoration: none;
   text-shadow: 2px 2px 4px #FDF6F0;
@@ -70,7 +70,7 @@ canvas {
 .key {
   height: 40vh;
 font-style: bold;
-font-weight: 600;
+font-weight: 601;
 text-align: end;
 }
 
